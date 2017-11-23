@@ -1,3 +1,4 @@
+import json from './sample.json';
 export default function(context) {
-  context.document.showMessage("It's alive 🙌")
+  console.info(json.hello);
 }

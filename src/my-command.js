@@ -1,4 +1,12 @@
-import json from './sample.json';
+import React from 'react';
+import { Artboard, render } from 'react-sketchapp';
+import App from './components/App';
+
 export default function(context) {
-  console.info(json.hello);
+  render(
+    <Artboard name="sample">
+      <App />
+    </Artboard>,
+    context.document.currentPage()
+  );
 }

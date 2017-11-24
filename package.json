@@ -10,18 +10,28 @@
   },
   "scripts": {
     "build": "skpm-build",
+    "build:web": "webpack",
     "watch": "skpm-build --watch",
+    "watch:web": "webpack-dev-server --open --config webpack.config.js",
     "start": "skpm-build --watch --run",
     "link": "skpm-link",
     "postinstall": "npm run build && skpm-link"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-preset-airbnb": "^2.4.0",
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
   "dependencies": {
     "@skpm/builder": "^0.2.2",
-    "react": "^16.1.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-native": "^0.50.3",
+    "react-native-web": "^0.1.14",
     "react-primitives": "^0.4.4",
     "react-sketchapp": "^0.12.1",
-    "react-test-renderer": "^16.1.1",
+    "react-test-renderer": "^15.4.2",
     "styled-components": "^2.2.3"
   }
 }

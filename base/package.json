@@ -1,0 +1,45 @@
+{
+  "name": "@sawa-zen/style-guide",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/style-guide.js",
+  "scripts": {
+    "build": "rollup -c --environment BUILD:production",
+    "watch": "rollup -c -w",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sawa-zen/react-sketchapp-sample.git"
+  },
+  "author": "sawa-zen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sawa-zen/react-sketchapp-sample/issues"
+  },
+  "homepage": "https://github.com/sawa-zen/react-sketchapp-sample#readme",
+  "peerDependencies": {
+    "react": "^16.3.2",
+    "react-primitives": "^0.5.0",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.44",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "@babel/preset-react": "^7.0.0-beta.44",
+    "babel-core": "^7.0.0-bridge.0",
+    "babelrc-rollup": "^3.0.0",
+    "react": "^16.3.2",
+    "react-primitives": "^0.5.0",
+    "react-sketchapp": "^1.1.0",
+    "react-test-renderer": "^16.3.2",
+    "rollup": "^0.58.1",
+    "rollup-plugin-babel": "^4.0.0-beta.4",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "styled-components": "^3.2.6"
+  }
+}

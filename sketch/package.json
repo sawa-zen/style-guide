@@ -1,0 +1,24 @@
+{
+  "skpm": {
+    "main": "style-guide.sketchplugin",
+    "manifest": "src/manifest.json"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "render": "skpm-build --watch --run",
+    "render:once": "skpm-build --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.5.4"
+  },
+  "dependencies": {
+    "@sawa-zen/style-guide": "file:../base",
+    "react": "^16.3.2",
+    "react-primitives": "^0.5.0",
+    "react-sketchapp": "^1.1.0",
+    "react-test-renderer": "^16.3.2",
+    "styled-components": "^3.2.6"
+  }
+}

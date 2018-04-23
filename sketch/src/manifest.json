@@ -3,7 +3,7 @@
 	"bundleVersion": 1,
 	"commands": [
 		{
-			"name": "react-sketchapp-sample",
+			"name": "style-guide",
 			"identifier": "main",
 			"script": "./my-command.js"
 		}

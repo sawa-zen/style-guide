@@ -5,6 +5,7 @@ import Colors from './sections/colors/Colors';
 import TextStyles from './sections/textStyles/TextStyles';
 import Buttons from './sections/buttons/Buttons';
 import Header from './components/Header';
+import './symbols';
 
 const StyledArtboard = styled(Artboard)`
   width: 1028px;

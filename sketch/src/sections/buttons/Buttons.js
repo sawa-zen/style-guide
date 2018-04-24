@@ -1,7 +1,15 @@
 import React from 'react';
 import styled from 'styled-components/primitives';
 import Section from '../../components/Section';
-import { Button, Text } from '@sawa-zen/style-guide';
+import { Text } from '@sawa-zen/style-guide';
+import {
+  Primary,
+  PrimaryHover,
+  PrimaryDisabled,
+  Secondary,
+  SecondaryHover,
+  SecondaryDisabled,
+} from '../../symbols/buttons';
 
 const Row = styled.View`
   flex-direction: row;
@@ -23,29 +31,17 @@ const Buttons = () => (
       <Column>
         <Type type="caption">primary</Type>
       </Column>
-      <Column>
-        <Button type="primary" />
-      </Column>
-      <Column>
-        <Button type="primary" label="Hover" hover />
-      </Column>
-      <Column>
-        <Button type="primary" label="Disabled" disabled />
-      </Column>
+      <Column><Primary /></Column>
+      <Column><PrimaryHover /></Column>
+      <Column><PrimaryDisabled /></Column>
     </Row>
     <Row>
       <Column>
         <Type type="caption">secondary</Type>
       </Column>
-      <Column>
-        <Button type="secondary" />
-      </Column>
-      <Column>
-        <Button type="secondary" label="Hover" hover />
-      </Column>
-      <Column>
-        <Button type="secondary" label="Disabled" disabled />
-      </Column>
+      <Column><Secondary /></Column>
+      <Column><SecondaryHover /></Column>
+      <Column><SecondaryDisabled /></Column>
     </Row>
   </Section>
 );
